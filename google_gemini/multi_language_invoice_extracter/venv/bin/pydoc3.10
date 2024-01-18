@@ -1,0 +1,5 @@
+#!/Users/rezaabdi/Desktop/courses/llms/google_gemini/multi_language_invoice_extracter/venv/bin/python3.10
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()
