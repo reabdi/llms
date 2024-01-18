@@ -1,60 +1,86 @@
-import google.generativeai as genai
-import streamlit as st
-from PIL import Image
+# Importing necessary libraries and modules
+import google.generativeai as genai  # Google's generative AI library
+import streamlit as st  # Streamlit library for creating web apps
+from PIL import Image  # Python Imaging Library for image processing
 
-import os
+import os  # Standard library for OS interface
 
-from dotenv import load_dotenv
-load_dotenv()
+# Loading environment variables
+from dotenv import (
+    load_dotenv,
+)  # Dotenv for loading environment variables from a .env file
 
-# Confiduring the Gemini model
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+load_dotenv()  # Load environment variables from .env file
 
-# Function to load the Google Gemini Pro Vision
-model = genai.GenerativeModel('gemini-pro-vision')
+# Configuring the Gemini model with an API key
+genai.configure(
+    api_key=os.getenv("GOOGLE_API_KEY")
+)  # Set the API key for the Gemini model
 
+# Initialize the Google Gemini Pro Vision model
+model = genai.GenerativeModel("gemini-pro-vision")  # Load the Gemini Pro Vision model
+
+
+# Define a function to get response from Gemini model
 def get_gimini_response(input, image, prompt):
-    response=model.generate_content([input, image[0], prompt])
-    return response.text
+    # Generating content using the Gemini model
+    response = model.generate_content(
+        [input, image[0], prompt]
+    )  # Generate response based on input, image, and prompt
+    return response.text  # Return the textual part of the response
 
-# Function to display the uploaded image
+
+# Define a function to process the uploaded image
 def input_image_details(uploaded_file):
     if uploaded_file is not None:
-        # Read the file into bytes
-        bytes_data = uploaded_file.getvalue()
+        # Convert uploaded file into bytes
+        bytes_data = uploaded_file.getvalue()  # Read file as byte data
 
         image_parts = [
             {
-                "mime_type": uploaded_file.type,    # Get the mime type of the uploaded file
-                "data": bytes_data
+                "mime_type": uploaded_file.type,  # Extract MIME type of the file
+                "data": bytes_data,  # Include byte data of the image
             }
         ]
         return image_parts
     else:
+        # Error handling if no file is uploaded
         raise FileNotFoundError("No File Uploaded...")
 
-# The Streamlit UI setup
-st.set_page_config(page_title="Multi-Language Invoice Extractor")
 
-st.header("Multi-Language Invoice Extractor")
-input=st.text_input("Input Prompt: ", key="Input")
-uploaded_file=st.file_uploader("Choose an image for the desired invoice...:", type=["jpg", "jpeg", "png"])
+# Setting up the Streamlit user interface
+st.set_page_config(
+    page_title="Multi-Language Invoice Extractor"
+)  # Configuring Streamlit page
 
-image=""
+# Creating Streamlit UI components
+st.header("Multi-Language Invoice Extractor")  # Page header
+input = st.text_input("Input Prompt: ", key="Input")  # Input text box for user prompt
+uploaded_file = st.file_uploader(
+    "Choose an image for the desired invoice...:", type=["jpg", "jpeg", "png"]
+)  # File uploader
+
+image = ""
 if uploaded_file is not None:
-    image=Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image.", use_column_width=True)
+    # Displaying the uploaded image
+    image = Image.open(uploaded_file)  # Open the uploaded image file
+    st.image(
+        image, caption="Uploaded Image.", use_column_width=True
+    )  # Display the image in Streamlit app
 
-submit=st.button("Tell me about the invoice...")
+submit = st.button("Tell me about the invoice...")  # Submit button
 
-input_prompt="""
+# Predefined input prompt for the Gemini model
+input_prompt = """
 You are an expert in understanding the invoices based on images and files you're getting to analyze.
-The user will uploaded an image as the invoice and you should answer to any questions based on the uploaded invoice image.
+The user will upload an image as the invoice and you should answer any questions based on the uploaded invoice image.
 """
 
-# If submit button is clicked
+# Handling the submit action
 if submit:
-    image_data = input_image_details(uploaded_file)
-    response = get_gimini_response(input_prompt, image_data, input)
-    st.subheader("The response is...")
-    st.write(response)
+    image_data = input_image_details(uploaded_file)  # Process the uploaded image
+    response = get_gimini_response(
+        input_prompt, image_data, input
+    )  # Get response from the Gemini model
+    st.subheader("The response is...")  # Display subheader
+    st.write(response)  # Show the response in the Streamlit app
