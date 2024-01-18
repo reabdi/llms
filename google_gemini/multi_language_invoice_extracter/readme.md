@@ -1,3 +1,15 @@
+# Multi Language Invoice Extracter
+**Goal:** 
+This model is to create an AI based (Here Google Gemini) tool to extract text from PDF files.
+
+## Steps to follow:
+
+**1. Creating the environment:**
+```bash
+conda create -p venv python==3.10 -y
+conda activate venv/
+```
+**2. Creatign the env file and providing the *GOOGLE_API_KEY***
 vist here: https://ai.google.dev/
 
 **3. Installing the requirement from the requirement.txt**
