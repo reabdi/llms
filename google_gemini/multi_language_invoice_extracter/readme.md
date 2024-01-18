@@ -29,6 +29,11 @@ Note: Check the application.py for the code.
 streamlit run application.py
 ```
 
+Sample Interface:
+![Screenshot 2024-01-17 at 11 28 35 PM](https://github.com/reabdi/llms/assets/45298432/6f7e4af6-08ac-4f53-825d-d3eea613e7ad)
+
+
+
 Sample Prompts could be:
 - Who is this invoice billed to?
 - Tell me how much was deposit requested?
