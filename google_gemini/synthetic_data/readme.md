@@ -63,7 +63,7 @@ The user should determie:
 Then, the final JSON file will be created based on the input data. Besides the wrapper, the straucture of both files is identical.
 
 ```bash
-python3 run application_wrapper.py
+python3 application_wrapper.py
 ```
 
 Sample Interface:
