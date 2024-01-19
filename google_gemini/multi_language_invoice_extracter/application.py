@@ -1,7 +1,6 @@
 # Importing necessary libraries and modules
 import google.generativeai as genai  # Google's generative AI library
 import streamlit as st  # Streamlit library for creating web apps
-from PIL import Image  # Python Imaging Library for image processing
 
 import os  # Standard library for OS interface
 

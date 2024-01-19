@@ -1,0 +1,8 @@
+CREATE TABLE tabe_sample (
+  `User_Id` BIGINT NOT NULL,
+  `Reference_Type` VARCHAR(255) NOT NULL,
+  `Status_ID` VARCHAR(255) NOT NULL,
+  CHECK (`User_Id` BETWEEN 1000000 AND 2000000),
+  CHECK (`Reference_Type` IN ('Task', 'Asana', 'Email', 'GoogleDoc')),
+  CHECK (`Status_ID` IN IN ('ACTIVE', 'IN-ACTIVE')),
+);
