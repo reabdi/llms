@@ -67,6 +67,7 @@ python3 run application_wrapper.py
 ```
 
 Sample Interface:
+![Screenshot 2024-01-18 at 11 22 45 PM](https://github.com/reabdi/llms/assets/45298432/b5a31bdf-cfa3-407f-b81c-19fe2bd21bda)
 
 
 Sample inputs and outputs are available in the repo. 
