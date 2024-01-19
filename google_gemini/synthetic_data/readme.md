@@ -38,7 +38,7 @@ Including ".env" and ".venv" to the file -if you want to keep the files remotely
 pip3 install -r requirements.txt
 ```
 
-**4. The next step is to create the application using the installed packages.**
+**6. The next step is to create the application using the installed packages.**
 Check the application.py and application_wrapper.py files for the code.
 
 The tool includes two python files:
