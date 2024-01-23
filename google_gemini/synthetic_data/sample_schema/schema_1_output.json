@@ -1,27 +1,27 @@
 [
   {
-    "User_Id": 1000000,
-    "Reference_Type": "Task",
-    "Status_ID": "ACTIVE"
+    "news_id": 1012,
+    "source_type": "Meta",
+    "outcome": "In-PROCESS"
   },
   {
-    "User_Id": 1000001,
-    "Reference_Type": "Asana",
-    "Status_ID": "IN-ACTIVE"
+    "news_id": 1034,
+    "source_type": "X",
+    "outcome": "DONE"
   },
   {
-    "User_Id": 1000002,
-    "Reference_Type": "Email",
-    "Status_ID": "ACTIVE"
+    "news_id": 1067,
+    "source_type": "X",
+    "outcome": "In-PROCESS"
   },
   {
-    "User_Id": 1000003,
-    "Reference_Type": "GoogleDoc",
-    "Status_ID": "IN-ACTIVE"
+    "news_id": 1078,
+    "source_type": "X",
+    "outcome": "DONE"
   },
   {
-    "User_Id": 1000000,
-    "Reference_Type": "Task",
-    "Status_ID": "ACTIVE"
+    "news_id": 1456,
+    "source_type": "Youtube",
+    "outcome": "In-PROCESS"
   }
 ]
