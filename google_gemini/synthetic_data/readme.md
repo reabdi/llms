@@ -73,4 +73,5 @@ Then, the final JSON file will be created based on the input data. Besides the w
 **NOTE:** Sample inputs and outputs are availabe [HERE](sample_schema/schema_1.txt)
 
 Sample Interface:
-![Screenshot 2024-01-18 at 11 22 45 PM](https://github.com/reabdi/llms/assets/45298432/b5a31bdf-cfa3-407f-b81c-19fe2bd21bda)
+<img width="1311" alt="Screenshot 2024-01-22 at 10 54 38 PM" src="https://github.com/reabdi/llms/assets/45298432/8f3cf577-682e-43eb-8192-28013fb94daa">
+
