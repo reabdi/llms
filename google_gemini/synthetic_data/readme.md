@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 ```
 
 **4. The next step is to create the application using the installed packages.**
-Check the main.py and application.py for the UI-based and application_wrapper.py for the wrapper-based options.
+Check the application.py and application_wrapper.py files for the code.
 
 The tool includes two python files:
 
