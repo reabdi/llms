@@ -4,6 +4,8 @@ import streamlit as st  # Streamlit library for creating web apps
 import os  # Standard library for OS interface
 import json
 
+from application import get_gimini_response
+
 # Loading environment variables
 from dotenv import (
     load_dotenv,
@@ -15,35 +17,6 @@ load_dotenv()  # Load environment variables from .env file
 genai.configure(
     api_key=os.getenv("GOOGLE_API_KEY")
 )  # Set the API key for the Gemini model
-
-# Initialize the Google Gemini Pro Vision model
-model = genai.GenerativeModel('gemini-pro')  # Load the Gemini Pro model
-
-
-# Define a function to get response from Gemini model
-def get_gimini_response(data_model, constraints_items, recordsNumber):
-    # Generating content using the Gemini model
-    prompt_template = f"""
-    You are an expert in generating synthetic datasets based on the data schema, the provided constraints, and number of desired records you're getting by.
-    The data schema, the contraints on the some or all the variables, as well as the number of the synthetic records requedted will be provide in this prompt and you should generate synthetic data in JSON format. 
-    Make sure to generate the synthetic data exactly based on the format provide as the checks in the datamodel structure and infoamtion you're getting from constraints.
-
-    The dataset schema specifies the following key details as a SQL code:{data_model} 
-
-    You should provide data for all the variabels in the data_model,
-    Also you should consider the constrainsts in creating the data for the following columns:{constraints_items}
-
-    The number of records that is needed to be genreated:{recordsNumber}
-
-    Based on the guidelines, generate a diverse and representative set of synthetic data. 
-    Ensure that the data adheres closely to the described schema, maintaining consistency in data types and respecting all constraints and patterns. 
-    The output should be in JSON format, with each row representing a separate record following the schema's structure."
-    """
-
-    response = model.generate_content(
-        prompt_template
-    )  # Generate response based on input, data model (text), and prompt
-    return response.text  # Return the textual part of the response
 
  
 # Define the function to read the file
