@@ -1,27 +1,27 @@
 [
-  {
-    "news_id": 1012,
-    "source_type": "Meta",
-    "outcome": "In-PROCESS"
-  },
-  {
-    "news_id": 1034,
-    "source_type": "X",
-    "outcome": "DONE"
-  },
-  {
-    "news_id": 1067,
-    "source_type": "X",
-    "outcome": "In-PROCESS"
-  },
-  {
-    "news_id": 1078,
-    "source_type": "X",
-    "outcome": "DONE"
-  },
-  {
-    "news_id": 1456,
-    "source_type": "Youtube",
-    "outcome": "In-PROCESS"
-  }
-]
+    {
+      "news_id": 1012,
+      "source_type": "Meta",
+      "outcome": "In-PROCESS"
+    },
+    {
+      "news_id": 1034,
+      "source_type": "X",
+      "outcome": "DONE"
+    },
+    {
+      "news_id": 1067,
+      "source_type": "X",
+      "outcome": "In-PROCESS"
+    },
+    {
+      "news_id": 1078,
+      "source_type": "X",
+      "outcome": "DONE"
+    },
+    {
+      "news_id": 1456,
+      "source_type": "Youtube",
+      "outcome": "In-PROCESS"
+    }
+  ]

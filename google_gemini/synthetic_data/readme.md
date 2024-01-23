@@ -74,4 +74,3 @@ Then, the final JSON file will be created based on the input data. Besides the w
 
 Sample Interface:
 <img width="1308" alt="Screenshot 2024-01-23 at 12 22 15 AM" src="https://github.com/reabdi/llms/assets/45298432/99f037b2-cd00-42ca-bc7a-8326e428f7c7">
-
