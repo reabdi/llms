@@ -6,23 +6,34 @@ The goal of this model is to create an LLm based tool using Google Gemini Pro to
 
 **1. Creating the environment:**
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+* **Mac**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+* **Windows**
+    ```bash
+    python -m venv .venv
+    .\venv\Scripts\activate
+    ```
 
-**2. Creating the env file and providing the *GOOGLE_API_KEY***
+**2. Creating the .env file and creating the *GOOGLE_API_KEY***
 
 visit here: https://ai.google.dev/
 
-**3. Installing the requirement from the requirement.txt**
+**3. Installing the requirements from the requirement.txt**
 * streamlit
 * google-generativeai
 * python-dotenv
 
-```bash
-pip3 install -r requirements.txt
-```
+* **Mac**
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+* **Windows**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 **4. The next step is to create the application using the installed packages.**
 Check the application.py and application_wrapper.py files for the code.
@@ -48,9 +59,15 @@ The user should determie:
 
 Then, the final JSON file will be created based on the input data. Besides the wrapper, the straucture of both files is identical.
 
-```bash
-python3 application_wrapper.py
-```
+* **Mac**
+    ```bash
+    python3 application_wrapper.py
+    ```
+* **Windows**
+    ```bash
+    python application_wrapper.py
+    ```
+
 
 **NOTE:** Sample inputs and outputs are availabe [HERE](sample_schema/schema_1.txt)
 
