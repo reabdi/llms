@@ -21,11 +21,13 @@ The goal of this model is to create an LLm based tool using Google Gemini Pro to
 
 visit here: https://ai.google.dev/
 
-**3. Installing the requirements from the requirement.txt**
+**3. Installing the requirements from the requirement.txt**\
+List of packages
 * streamlit
 * google-generativeai
 * python-dotenv
 
+To install the packages:
 * **Mac**
     ```bash
     pip3 install -r requirements.txt
