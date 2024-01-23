@@ -70,7 +70,6 @@ Then, the final JSON file will be created based on the input data. Besides the w
     python application_wrapper.py
     ```
 
-
 **NOTE:** Sample inputs and outputs are availabe [HERE](sample_schema/schema_1.txt)
 
 Sample Interface:
