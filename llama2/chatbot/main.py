@@ -115,7 +115,7 @@ with col1:
     st.markdown(
         "[Get a Replicate API key](https://replicate.com/)"
     )
-    st.markdown("[View the source code](https://github.com/reabdi/llms/tree/main/google_gemini/synthetic_data)"
+    st.markdown("[View the source code](https://github.com/reabdi/llms/tree/dev/llama2/chatbot)"
     )
 
     run_button = st.button('Run')
