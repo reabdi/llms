@@ -1,6 +1,6 @@
 # LLM-Based Memory-Enabled Chatbot
 **Goal:** 
-The goal of this model is to create an LLm-based chatbot with the ability to have momory. The user can select an LLM from the following available open source models or a custom model from [Replicate](https://replicate.com/collections/trainable-language-models)
+The goal of this model is to create an LLm-based chatbot with the ability to have memory. The user can select an LLM from the following available open source models or a custom model from [Replicate](https://replicate.com/collections/trainable-language-models)
 * LLama 7b, 13b, and 70b
 * Mixtral 7b
 * Google T5 XL
