@@ -1,0 +1,10 @@
+langchain
+langchain_core
+langchain-google-genai
+langchain_experimental
+google-generativeai==0.3.1
+google-ai-generativelanguage==0.4.0
+streamlit
+watchdog
+python-dotenv
+google-search-results
