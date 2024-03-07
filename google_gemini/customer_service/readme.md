@@ -1,4 +1,4 @@
-https://img.shields.io/badge/:badgeContent?style=plastic&labelColor=gray&color=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Frevolutionizing-customer-service-generative-ai-reza-abdi-vxd8c%2F%3FtrackingId%3DJERqqKDBQJ2fFGaDJCWPkQ%253D%253D
+
 
 
 # LLM-Based Memory-Enabled Chatbot
