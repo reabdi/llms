@@ -59,7 +59,7 @@ with col1:
         "[Get a Google API key](https://ai.google.dev/)"
     )
 
-    st.markdown("[View the source code](https://github.com/reabdi/llms/tree/dev/llama2/chatbot)"
+    st.markdown("[View the source code](https://github.com/reabdi/llms/tree/dev/google_gemini/customer_service)"
     )
 
     run_button = st.button('Run')
