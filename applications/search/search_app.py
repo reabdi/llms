@@ -75,6 +75,7 @@ paretn_chain_longAnswer = SequentialChain(chains=[chain, chain_2, chain_3],
                                           verbose=True)
 
 if input_text:
+    
     # st.write(parent_chain.run(input_text))
     
     # st.write(paretn_chain_longAnswer({'name':input_text}))
