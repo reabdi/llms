@@ -50,7 +50,7 @@ with col1:
     #     st.write(uploaded_file.name)
 
     google_api_key = st.text_input(
-        "Replicate API Key",
+        "Gemini API Key",
         type="password",
         help="Enter your Google API key."
     )
